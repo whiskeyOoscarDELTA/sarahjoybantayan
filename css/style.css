@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.greetings{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.greetings > span{
+    animation: glow 0.9s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #e73e3e;
+        text-shadow: 0 0 12px #d40808, 0 0 50px #580303, 0 0 100px #740707;
+    }
+    10%, 90%{
+        color: #1414149f;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(1){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(2){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .7s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .7s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(7){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(8){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(9){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(10){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(11){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(12){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(13){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(14){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(15){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(16){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(17){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(18){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(19){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(20){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(21){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(22){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(23){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(24){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(25){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(26){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(27){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(28){
+    animation-delay: .7s ;
+}
+.greetings > span:nth-child(29){
+    animation-delay: .7s ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    height: 200px;
+    width: 391px;
+    background-color: #030300;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+.part {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 150px solid transparent;
+    transform-origin: top;
+    transition: transform 0.25s linear;
+}
+.part.one {
+    border-top: 140px solid hwb(0 0% 97%);
+    z-index: 3;
+    transition-delay: 0.75s;
+}
+.part.two {
+    border-top: 100px solid hwb(0 0% 97%);
+    transform: rotateX(90deg);
+    z-index: 1;
+    transition-delay: 0.5s;
+}
+.envelope {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 140px solid transparent;
+    border-right: 150px solid hwb(0 3% 30%);
+    border-bottom: 100px solid hwb(0 3% 30%);
+    border-left: 150px solid  hwb(0 3% 30%);
+    z-index: 3;
+}
+.letter {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 100%; /* Increase this value as needed */
+    background-color: #e77a7a;
+    border-radius: 15px;
+    z-index: 2;
+    transition: 0.5s;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.wrapper:hover .part.one {
+    transform: rotateX(90deg);
+    transition-delay: 0s;
+}
+
+.wrapper:hover .part.two {
+    transform: rotateX(180deg);
+    transition-delay: 0.25s;
+}
+.wrapper:hover .letter {
+    transform: translateY(-50px);
+    transition-delay: 0.5s;
+}
+
+.content {
+    padding: 10px; /* Adjust as needed */
+}
+
+.button {
+    align-self: center; /* Center the button horizontally */
+    z-index: 10; /* Adjust as needed */
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: red;
+}
+
+.to-sarah {
+    font-size: 0.8rem; /* Adjust as needed */
+}
+
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .description{
+        font-size: 5px;
+    }
+    
+    .button a{
+        font-size: 10px;
+    }
+    .button {
+        margin: 4px 4px 6px 5px;
+    }
+}
